@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta chartset="UTF-8"/>
+<meta name view="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>MY MUSIC</title>
+
+</head>
+<body>
+   
+       
+   <div class="container">
+      <h1><span class="auto-type"></span></h1>
+   </div>
+        
+
+        <div class="music-container" id="music-container">
+         <div class="music-info">
+          <h4 id="title">YOU&ME</h4>
+           <div class="progress-container">
+           <div class="progress"></div>
+        </div>
+        </div>
+        
+        <audio src="music/lena.ogg" id="audio"></audio>
+
+        <div class="img-container">
+         <img src="images/lena.jpg" alt="music-cover"
+         id="cover" />
+       </div>
+
+       <div class="navigation">
+        <button id="prev" class="action-btn">
+           <i class="fas fa-backward"></i>     
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>     
+             </button>
+             <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>     
+             </button>
+       </div>
+       </div>
+        
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+            var typed = new Typed(".auto-type", {
+               strings: ["Playing", "Music", "Relax"],
+               typeSpeed: 150,
+               backSpeed: 150,
+               loop: true
+            })
+         </script>
+        <script src="script.js"></script>
+</body>
+     </html>
